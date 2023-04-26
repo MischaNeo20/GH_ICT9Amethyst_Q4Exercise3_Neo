@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CM TO FT CONVERTER</title>
+	<center><h1>CM TO FT CONVERTER</h1></center>
+</head>
+<body>
+	<center>
+	<input type="text" id="id1" placeholder="Centimeters"><br>
+	<input type="submit" value="Convert" onclick="myFunction()"><br>
+	<p id="answer"></p>
+	<script>
+		function myFunction() {
+			var num1 = document.getElementById('id1').value;
+			var num2 = 30.48;
+			var answer = Number(num1) / Number(num2);
+			document.getElementById('answer').innerHTML = answer + " ft.";
+		}
+	</script>
+</center>
+</body>
+</html>
